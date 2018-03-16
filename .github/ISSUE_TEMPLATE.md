@@ -1,5 +1,5 @@
-* Date you used Cookiecutter PyPackage:
-* Cookiecutter version used, if any:
+* Date you used Stemcode:
+* Stemcode version used, if any:
 * Python version, if any:
 * Operating System:
 
