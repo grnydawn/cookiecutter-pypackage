@@ -2,17 +2,17 @@
 
 from distutils.core import setup
 setup(
-    name='cookiecutter-pypackage',
+    name='stemcode',
     packages=[],
     version='0.1.0',
-    description='Cookiecutter template for a Python package',
-    author='Audrey Roy Greenfeld',
-    license='BSD',
-    author_email='aroy@alum.mit.edu',
-    url='https://github.com/audreyr/cookiecutter-pypackage',
-    keywords=['cookiecutter', 'template', 'package', ],
+    description='Stemcode template for a Python package',
+    author='Youngsung Kim',
+    license='MIT',
+    author_email='grnydawn@gmail.com',
+    url='https://github.com/grnydawn/stemcode',
+    keywords=['stemcode', 'template', 'package', ],
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 1 - Planing',
         'Environment :: Console',
         'Intended Audience :: Developers',
         'Natural Language :: English',
