@@ -40,12 +40,12 @@ def test_content(response):
 def test_command_line_interface():
     """Test the CLI."""
     runner = CliRunner()
-    result = runner.invoke(cli.main)
+    result = runner.invoke(cli.main, ['Peter'])
     assert result.exit_code == 0
-    assert '{{ cookiecutter.project_slug }}.cli.main' in result.output
+    assert 'Hello Peter' in result.output
     help_result = runner.invoke(cli.main, ['--help'])
     assert help_result.exit_code == 0
-    assert '--help  Show this message and exit.' in help_result.output
+    assert 'Console script for {{ cookiecutter.project_slug }}.' in help_result.output
 {%- endif %}
 {%- else %}
 

@@ -1,16 +1,22 @@
 # -*- coding: utf-8 -*-
 
 """Console script for {{cookiecutter.project_slug}}."""
+from __future__ import (absolute_import, division,
+                        print_function, unicode_literals)
+from builtins import *
+
 import sys
 import click
 
+from .{{cookiecutter.project_slug}} import hello
 
 @click.command()
-def main(args=None):
+@click.option('--count', default=1, help='number of greetings')
+@click.argument('name')
+def main(count, name, args=None):
     """Console script for {{cookiecutter.project_slug}}."""
-    click.echo("Replace this message by putting your code into "
-               "{{cookiecutter.project_slug}}.cli.main")
-    click.echo("See click documentation at http://click.pocoo.org/")
+    for x in range(count):
+        print(hello(name))
     return 0
 
 
