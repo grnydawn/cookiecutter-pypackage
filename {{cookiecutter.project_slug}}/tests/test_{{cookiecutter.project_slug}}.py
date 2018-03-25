@@ -12,7 +12,7 @@ import unittest
 from click.testing import CliRunner
 {%- endif %}
 
-from {{ cookiecutter.project_slug }} import {{ cookiecutter.project_slug }}
+from {{ cookiecutter.project_slug }} import hello
 {%- if cookiecutter.command_line_interface|lower == 'click' %}
 from {{ cookiecutter.project_slug }} import cli
 {%- endif %}
@@ -34,7 +34,7 @@ def test_content(response):
     """Sample pytest test function with the pytest fixture as an argument."""
     # from bs4 import BeautifulSoup
     # assert 'GitHub' in BeautifulSoup(response.content).title.string
-    output = {{ cookiecutter.project_slug }}.hello('Peter')
+    output = hello('Peter')
     assert 'Hello Peter' in output
 {%- if cookiecutter.command_line_interface|lower == 'click' %}
 
